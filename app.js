@@ -16,10 +16,20 @@ while (userSum != "") {
 
     if (sym === "+") {
         userSum = +prompt("Qo'shmoqchi bo'gan Summani kiriting:")
-        total += userSum
+
+        function plusCalc(a, b) {
+            total = a + b
+        }
+        plusCalc(total, userSum)
+
     } else if (sym === "-") {
         userSum = +prompt("Ayirmoqchi bo'gan Summani kiriting:")
-        total -= userSum
+
+        function minusCalc(a, b) {
+            total = a - b
+        }
+        minusCalc(total, userSum)
+
     } else {
         break
     }
