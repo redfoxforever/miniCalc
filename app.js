@@ -8,14 +8,16 @@ let total = +""
 
 total += userSum
 
+let sym
+
 while (userSum != "") {
 
-    userSum = prompt(`Summa ${total}, qoshmoqchi bosez(+), ayirmoqchi bosez(-), bo'sh qoldrb ok bosez chek chqadi`)
+    sym = prompt(`Summa ${total}, qoshmoqchi bosez(+), ayirmoqchi bosez(-), bo'sh qoldrb ok bosez chek chqadi`)
 
-    if (userSum === "+") {
+    if (sym === "+") {
         userSum = +prompt("Qo'shmoqchi bo'gan Summani kiriting:")
         total += userSum
-    } else if (userSum === "-") {
+    } else if (sym === "-") {
         userSum = +prompt("Ayirmoqchi bo'gan Summani kiriting:")
         total -= userSum
     } else {
