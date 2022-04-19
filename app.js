@@ -8,28 +8,28 @@ let total = +""
 
 total += userSum
 
-let sym
+let symb
+
+let plusCalc = function(a, b) {
+    total = a + b
+}
+
+let minusCalc = function (a, b) {
+    total = a - b
+}
 
 while (userSum != "") {
 
-    sym = prompt(`Summa ${total}, qoshmoqchi bosez(+), ayirmoqchi bosez(-), bo'sh qoldrb ok bosez chek chqadi`)
+    symb = prompt(`Summa ${total}, qoshmoqchi bosez(+), ayirmoqchi bosez(-), bo'sh qoldrb ok bosez chek chqadi`)
 
-    if (sym === "+") {
+    if (symb === "+") {
         userSum = +prompt("Qo'shmoqchi bo'gan Summani kiriting:")
 
-        function plusCalc(a, b) {
-            total = a + b
-        }
         plusCalc(total, userSum)
-
-    } else if (sym === "-") {
+    } else if (symb === "-") {
         userSum = +prompt("Ayirmoqchi bo'gan Summani kiriting:")
-
-        function minusCalc(a, b) {
-            total = a - b
-        }
+        
         minusCalc(total, userSum)
-
     } else {
         break
     }
