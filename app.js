@@ -4,7 +4,7 @@ while (isNaN(userSum)) {
     userSum = +prompt("Summani kiriting:")
 }
 
-let total = +""
+let total = 0
 
 total += userSum
 
